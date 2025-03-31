@@ -5,7 +5,7 @@ import java.util.UUID;
 
 public record ScheduleDto(
 
-        UUID ScheduleId,
+        UUID scheduleId,
 
         LocalDateTime startAt,
 
