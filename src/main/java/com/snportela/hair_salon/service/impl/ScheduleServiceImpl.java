@@ -40,6 +40,7 @@ public class ScheduleServiceImpl implements ScheduleService {
         existingSchedule.setStartAt(schedule.getStartAt());
         existingSchedule.setEndAt(schedule.getEndAt());
         existingSchedule.setCustomer(schedule.getCustomer());
+        existingSchedule.setEmployee(schedule.getEmployee());
 
         return scheduleRepository.save(existingSchedule);
 

@@ -11,6 +11,8 @@ public record ScheduleDto(
 
         LocalDateTime endAt,
 
-        CustomerDto customer
+        CustomerDto customer,
+
+        EmployeeDto employee
 ) {
 }
