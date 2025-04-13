@@ -54,7 +54,7 @@ public class EmployeeController {
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteEmployee(@PathVariable("id") UUID employeeId) {
         employeeService.delete(employeeId);
-        return ResponseEntity.status(HttpStatus.OK).body("Deleted employee with ID: " + employeeId);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).body("Deleted employee with ID: " + employeeId);
     }
 
 }

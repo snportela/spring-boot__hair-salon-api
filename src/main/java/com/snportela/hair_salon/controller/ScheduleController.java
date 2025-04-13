@@ -34,7 +34,7 @@ public class ScheduleController {
     @GetMapping("/{id}")
     public ResponseEntity<ScheduleDto> getSchedule(@PathVariable("id") UUID scheduleId) {
         Schedule foundSchedule = scheduleService.findOne(scheduleId);
-        return ResponseEntity.status(HttpStatus.FOUND).body(scheduleMapper.toDto(foundSchedule));
+        return ResponseEntity.status(HttpStatus.OK).body(scheduleMapper.toDto(foundSchedule));
     }
 
     @PostMapping
@@ -54,7 +54,7 @@ public class ScheduleController {
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteSchedule(@PathVariable("id") UUID scheduleId) {
         scheduleService.delete(scheduleId);
-        return ResponseEntity.status(HttpStatus.OK).body("Deleted schedule with ID: " + scheduleId);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).body("Deleted schedule with ID: " + scheduleId);
     }
 
 }

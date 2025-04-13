@@ -23,7 +23,6 @@ public class WebConfig {
                                 HttpMethod.PUT.name(),
                                 HttpMethod.DELETE.name())
                         .allowedHeaders(HttpHeaders.CONTENT_TYPE, HttpHeaders.AUTHORIZATION);
-
             }
         };
     }
