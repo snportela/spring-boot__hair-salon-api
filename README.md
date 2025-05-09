@@ -8,6 +8,8 @@
 
 Spring Boot REST API for hair salon scheduling system.
 
+Frontend for this application: https://github.com/snportela/angular__hair-salon
+
 ## 💻Technologies
 ![JAVA__BADGE] ![SPRING__BADGE] ![MAVEN__BADGE] ![POSTGRES__BADGE]
 
